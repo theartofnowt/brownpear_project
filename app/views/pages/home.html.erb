@@ -1,1 +1,120 @@
-test!
+<section class="navigation">
+  <div class="nav-container">
+    <div class="logo-container">
+      <img class="logo" src="img/BP.png" alt="brownpear">
+    </div>
+    <div class="brand">
+      <a href="#!">brownpear</a>
+    </div>
+    <nav>
+      <div class="nav-mobile">
+        <a id="nav-toggle" href="#!"><span></span></a>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#!">Home</a></li>
+        <li><a href="#!">Shop</a>
+          <ul class="nav-dropdown">
+            <li><a href="#content" class="enabled">Art</a></li>
+            <li><a href="" class="enabled">Commission us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+<section class='intro'>
+  <div class="intro-container">
+    <div id="title-box">
+      <div class="container-choose">
+        <div class="overlay">
+          <div class="text">Welcome!<br>
+            <br>
+            <br>
+            <br>
+            <p>Art Prints, Sculpture and Commisions <br><br><br> all here at brownpear!</p>
+            <h3><br><br>Art Prints, Sculpture and Commisions <br>all here at brownpear!<h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-container">
+    <div class="popup" onclick="popUpFunction()">About?!
+      <div class="popuptext" id="myPopup">
+        <div class="popup_contents" id="about_contents">
+          <p id="about_header">How to use our site</p>
+          <table>
+            <tr>
+              <th><img class="about_image" src="img/computer.png"></th>
+              <th>Browse the site for art and choose something you fancy! Want something bespoke? Please request a commision and we will contact you!</th>
+            </tr>
+            <tr>
+              <th><img class="about_image" src="img/artist.png"></th>
+              <th>When requesting a commission our wonderful artist will be in touch via email to discuss some ideas!</th>
+            </tr>
+            <tr>
+              <th><img class="about_image" src="img/post.png"></th>
+              <th>For Art prints, our lovely print experts (who happen to have their office in an old disused train station! Quirky eh?!), will have the art printed on Giclee prints (the print wil last 100 years! Woo!) and then sent to you by post!</th>
+            </tr>
+            <tr>
+              <th><img class="about_image" src="img/whalePrint.png"></th>
+              <th>Finally enjoy your wonderful art!</th>
+            </tr>
+          </tr>
+          <tr>
+            <th></th>
+            <th><p>x</p></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="product-container">
+  <div id="content" class="container">
+    <header id="content-header">
+      <div id="price-container">
+        <span class="glyphicon glyphicon-tag"></span><span class="price">£40.00</span>
+      </div>
+      <img id="content-header-img" src="img/header-image.png" alt="Print">
+    </header>
+    <section id="content-details" class="row clearfix">
+      <article id="details-article" class="col-sm-8">
+        <h1 id="article-title">Your Product <span class="font-weight-light">Product Name</span></h1>
+
+
+        <p>Lorem ipsum dolor sit amet, in nam feugiat eleifend. Sea an possit offendit definiebas, usu cu aeque mediocritatem. Vis constituam suscipiantur ad, cum duis concludaturque no. Sea vocent consulatu at.</p>
+
+        <p>Lorem ipsum dolor sit amet, pri id tractatos torquatos, eruditi alienum eam ad. Sint graeci mel te. Ex eius corrumpit.</p>
+        <p><strong>Size</strong></p>
+        <ul class="no-indent">
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Lorem ipsum dolor sit amet, cum.</li>
+          <li>Lorem ipsum dolor sit amet, quo ne etiam.</li>
+        </ul>
+      </article>
+      <aside id="details-aside" class="col-sm-4">
+        <a id="btn-buy" href="receipt.html" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>Get it!</a>
+        <ul id="details-infobox" class="list-group">
+          <li class="list-group-item active clearfix">Info</li>
+          <li class="list-group-item">Size</li>
+          <li class="list-group-item">This Is Included</li>
+        </ul>
+      </aside>
+    </section>
+  </div>
+</section>
+
+<section class="footer-container">
+  <footer id="site-footer">
+    Made by  <a href="#" target="_blank"><img id="footer-logo" src="img/BP.png" alt="brownpear"></a>
+  </footer>
+</section>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
