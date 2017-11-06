@@ -1,7 +1,8 @@
 <section class="navigation">
   <div class="nav-container">
     <div class="logo-container">
-      <img class="logo" src="img/BP.png" alt="brownpear">
+      <!-- <img class="logo" src="./app/assets/stylesheets/img/BP.png" alt="brownpear"> -->
+      <%= image_tag('BP.png', id: "logo-img", alt: "brownpear") %>
     </div>
     <div class="brand">
       <a href="#!">brownpear</a>
@@ -81,7 +82,7 @@
       <div id="price-container">
         <span class="glyphicon glyphicon-tag"></span><span class="price">£40.00</span>
       </div>
-      <img id="content-header-img" src="img/header-image.png" alt="Print">
+      <%= image_tag('header-image.png', id: "content-head-img", alt: "Art Prints") %>
     </header>
     <section id="content-details" class="row clearfix">
       <article id="details-article" class="col-sm-8">
