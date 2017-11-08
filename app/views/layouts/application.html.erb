@@ -23,6 +23,92 @@
   </head>
 
   <body>
+    <section class="navigation">
+      <div class="nav-container">
+        <div class="logo-container">
+          <!-- <img class="logo" src="./app/assets/stylesheets/img/BP.png" alt="brownpear"> -->
+          <%= image_tag('BP.png', id: "logo-img", alt: "brownpear") %>
+        </div>
+        <div class="brand">
+          <a href="#!">brownpear</a>
+        </div>
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#!">Home</a></li>
+            <li><a href="#!">Shop</a>
+              <ul class="nav-dropdown">
+                <li><a href="#content" class="enabled">Art</a></li>
+                <li><a href="" class="enabled">Commission us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class='intro'>
+      <div class="intro-container">
+        <div id="title-box">
+          <div class="container-choose">
+            <div class="overlay">
+              <div class="text">Welcome!<br>
+                <br>
+                <br>
+                <br>
+                <p>Art Prints, Sculpture and Commissions <br><br><br> all here at brownpear!</p>
+                <h3><br><br>Art Prints, Sculpture and Commissions <br>all here at brownpear!<h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-container">
+        <div class="popup" onclick="popUpFunction()">About?!
+          <div class="popuptext" id="myPopup">
+            <div class="popup_contents" id="about_contents">
+              <p id="about_header">How to use our site</p>
+              <table>
+                <tr>
+                  <th><%= image_tag('computer.png', id: "about_image", alt: "order prints") %></th>
+                  <th>Browse the site for art and choose something you fancy! Want something bespoke? Please request a commision and we will contact you!</th>
+                </tr>
+                <tr>
+                  <th><%= image_tag('artist.png', id: "about_image", alt: "commision artist?") %></th>
+                  <th>When requesting a commission our wonderful artist will be in touch via email to discuss some ideas!</th>
+                </tr>
+                <tr>
+                  <th><%= image_tag('post.png', id: "about_image", alt: "we send post") %></th>
+                  <th>For Art prints, our lovely print experts (who happen to have their office in an old disused train station! Quirky eh?!), will have the art printed on Giclee prints (the print wil last 100 years! Woo!) and then sent to you by post!</th>
+                </tr>
+                <tr>
+                  <th><%= image_tag('whalePrint.png', id: "about_image", alt: "enjoy your print!") %></th>
+                  <th>Finally enjoy your wonderful art!</th>
+                </tr>
+              </tr>
+              <tr>
+                <th></th>
+                <th><p>x</p></th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="product-container">
+      <div id="content" class="container">
+        <header id="content-header">
+          <div id="price-container">
+            <span class="glyphicon glyphicon-tag"></span><span class="price">£40.00</span>
+          </div>
+          <%= image_tag('header-image.png', id: "content-head-img", alt: "Art Prints") %>
+        </header>
     <%= yield %>
+      </div>
   </body>
 </html>
