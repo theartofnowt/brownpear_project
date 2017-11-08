@@ -12,15 +12,16 @@
     $('html').click(function() {
       $('.nav-dropdown').hide();
     });
-    // Toggle open and close nav styles on click
-    $('#nav-toggle').click(function() {
-      $('nav ul').slideToggle();
-      console.log("should come down?")
+    //Toggle open and close nav styles on click. added preventDefault to stop element from clicking up again.
+    $('#nav-toggle').click(function(e) {
+      e.preventDefault();
+      $('nav ul').stop().slideToggle();
+      console.log("should come down and stay down?")
     });
-    // Hamburger to X toggle
+    //Hamburger to X toggle
     $('#nav-toggle').on('click', function() {
       this.classList.toggle('active');
-      console.log("and stay down?")
+      console.log("should x")
     });
   }));
  // end DOM ready
