@@ -109,23 +109,20 @@ nav {
     position: static; }
   .intro .intro-container #title-box .container-choose {
     z-index: 1;
-    position: absolute;
-    }
+    position: absolute; }
     .overlay .text {
-      font-size: 70px;
-      }
+      font-size: 70px; }
       .overlay .text p {
-      display: none;
-      }
+      display: none; }
       .overlay .text h3 {
+        padding-left: 10px;
         display: inline;
-        font-size: 23px;
-      }
+        font-size: 18px; }
   #myPopup {
     left: 0%;
     margin-left: 0px;
-    width: 400px;
-    font-size: 20px; }
+    width: 405px;
+    font-size: 15px;
     tr {
       padding-left: 15px;
       text-align: left; }
@@ -133,10 +130,9 @@ nav {
         padding-bottom: 15px;
         padding-left: 5px; }
         th p {
-          padding-left: 40px;
-        }
-
+          padding-left: 200px; }
   }
+}
 
 
 @media screen and (min-width: 800px) {
@@ -183,8 +179,6 @@ nav {
   background-size: cover;
   /*background: #8B572A;*/
 }
-
-//
 
 .intro-container {
   // max-width: 1200px;
@@ -251,7 +245,7 @@ nav {
   padding-top: 30px;
   padding-bottom: 20px;
   width: 100%;
-  background: #E79D52;
+  background:  #B8B093;
 }
 
 .popup {
@@ -274,11 +268,10 @@ nav {
     width: 900px;
     height: 597px;
     font-size: 20px;
-    background-color: #8B572A;
+    background-color: #B8B093;
     color: #fff;
     text-align: center;
-    border-radius: 6px;
-    border: 4px #E79D52 solid;
+    // border: 4px #E79D52 solid;
     padding: 8px 20px;
     position: absolute;
     z-index: 2;
@@ -289,7 +282,7 @@ nav {
     margin-bottom: 23px;
 }
 
-.about_image {
+.about-image {
   width: 100%;
 }
 
@@ -379,7 +372,7 @@ ul.no-indent {
   margin: 5px auto 20px auto;
   background: #fff;
   padding: 0px;
-  border-radius: 15px;
+  // border-radius: 15px;
   overflow: hidden;
   box-shadow:  -2px 2px 5px 0px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -492,7 +485,7 @@ ul.no-indent {
 }
 
 .dotmatrix {
-    background: url('../img/dot-matrix.svg') 50% 0% repeat-y #fff;
+    background: image-url('../img/dot-matrix.svg') 50% 0% repeat-y #fff;
     height: 100%;
     background-size: 50%;
     width: 10%;
@@ -551,13 +544,13 @@ ul.no-indent {
 
 /* RESPONSIVE PRODUCT AND RECEIPT*/
 
-@media (max-width: 991px) {
+@media (max-width: 800px) {
     #details-aside {
         margin-top: 40px;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     #content {
         margin: 0px 0px 20px 0px;
         border-radius: 0px;
