@@ -16,6 +16,8 @@ gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: :production
 #12 factor for Heroku
 gem 'rails_12factor', group: :production
+#stripe
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 #twitter bootstrap for payment
 gem 'bootstrap-sass'
 # Use Puma as the app server
